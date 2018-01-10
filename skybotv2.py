@@ -36,7 +36,8 @@ async def on_ready():
     await bot.change_presence(game=discord.Game(name='with human lives'))
     print(f'Fired up and ready to serve...!')
 
+bot_fio = open('token.txt')
+bot_token = bot_fio.readline()
+bot_fio.close()
 
-
-
-bot.run('Mzg3MjA3MDM4Njc1MTg5NzYw.DQhhbQ.mYRuHEV-07qt-3TVaoqSaKzjJfg', bot=True, reconnect=True)
+bot.run(bot_token, bot=True, reconnect=True)
