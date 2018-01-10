@@ -11,7 +11,8 @@ def get_prefix(bot, message):
 # Below cogs represents our folder our cogs are in. Following is the file name. So 'meme.py' in cogs, would be cogs.meme
 # Think of it like a dot path import
 initial_extensions = ['cogs.general',
-                      'cogs.meme']
+                      'cogs.meme',
+                      'cogs.vanguard']
 
 #Dev note: Add some more cogs later
 
@@ -34,6 +35,8 @@ async def on_ready():
 
     await bot.change_presence(game=discord.Game(name='with human lives'))
     print(f'Fired up and ready to serve...!')
+
+
 
 
 bot.run('Mzg3MjA3MDM4Njc1MTg5NzYw.DQhhbQ.mYRuHEV-07qt-3TVaoqSaKzjJfg', bot=True, reconnect=True)
