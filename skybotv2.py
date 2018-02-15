@@ -12,6 +12,7 @@ def get_prefix(bot, message):
 # Think of it like a dot path import
 initial_extensions = ['cogs.general',
                       'cogs.meme',
+                      'cogs.music',
                       'cogs.vanguard']
 
 #Dev note: Add some more cogs later

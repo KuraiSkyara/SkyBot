@@ -48,7 +48,7 @@ class VanguardCog:
     {} for 5 drives
     {} for 6 drives""".format(*guard_list))
             
-# The setup function below is neccesarry. Remember we give bot.add_cog() the name of the class in this case MembersCog.
-# When we load the cog, we use the name of the file.
+#Setup function
+#Use file name to load the cog, and use class name as the parameter for add_cog
 def setup(bot):
     bot.add_cog(VanguardCog(bot))

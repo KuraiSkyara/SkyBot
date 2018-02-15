@@ -32,7 +32,7 @@ class GeneralCog:
         """Says when a member joined."""
         await self.bot.say('{0.name} joined in {0.joined_at}'.format(member))
 
-# The setup function below is neccesarry. Remember we give bot.add_cog() the name of the class in this case MembersCog.
-# When we load the cog, we use the name of the file.
+#Setup function
+#Use file name to load the cog, and use class name as the parameter for add_cog
 def setup(bot):
     bot.add_cog(GeneralCog(bot))
