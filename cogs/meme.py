@@ -19,35 +19,7 @@ class MemeCog:
                     'Cannot predict now',  'Concentrate and ask again', 'Don\'t count on it', 'My reply is no',
                     'My sources say no', 'Outlook not so good', 'Very doubtful']
         await self.bot.say(random.choice(quoteList))
-
-    @commands.command(description='Defend your faith in Skyara')
-    async def insult(self, str='Really'):
-        """Teach pesky non-believers to not mess with Skyara"""
         
-        await self.bot.say("""{}, u call that an insult?
-
-i think its hilarious u kids talking shit about Skyara in the first place.
-u wouldnt say this shit to him irl, hes jacked. not only that but he wears the
-freshest clothes, eats at the chillest restaurants and hangs out with the hottest
-chicks. yall are pathetic lol""".format(str))
-
-    @commands.command(description='What would you rate it?')
-    async def giveit(self, int=0):
-        """What would you rate it?"""
-        if int==0:
-            await self.bot.say('Nothing appeared to happen...')
-        else:
-            await self.bot.say('**T H I C' + ' C' * int + '**')
-            
-
-    @commands.command(pass_context=True)
-    async def lewd(self, ctx, value: str = 'a'):
-        """Checks lewdness"""
-        if value == 'a':
-            value = ctx.message.author
-        random.seed()
-        await self.bot.say("{} is {}% lewd".format(value, random.randint(0,100)))
-
     @commands.command()
     async def sh(self, value:str='0'):
         """Play a game of Shiratori"""
